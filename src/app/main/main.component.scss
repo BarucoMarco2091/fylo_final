@@ -1,0 +1,171 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%, 75%);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    #container {
+        display: flex;
+        margin-right: 9dvh;
+        margin-left: 9dvh;
+        margin-bottom: 20dvh;
+
+        #container-text {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .main-title {
+                font-family: 'Raleway', sans-serif, serif;
+                font-size: 2rem;
+                margin-top: 5rem;
+                margin-bottom: 3dvh;
+                line-height: 3rem;
+            }
+
+            .container-text-paragraph {
+                font-family: 'Raleway', sans-serif, serif;
+                font-size: 1rem;
+                line-height: 2rem;
+                color: $veryDarkBlue;
+                margin-bottom: 3dvh;
+            }
+
+            .form {
+                display: flex;
+                gap: 3dvh;
+
+                #email {
+                    width: 47dvh;
+                }
+
+                .btn {
+                    background-color: $brightBlue;
+                    color: $lightGrayishBlue;
+                    cursor: pointer;
+                    width: 20dvh;
+                    height: 5dvh;
+                    border: none;
+                }
+            }
+        }
+
+        #container-img {
+            flex: 1;
+
+            .people-img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    #hero {
+        display: flex;
+        height: 100dvh;
+        margin-left: 9dvh;
+        margin-right: 9dvh;
+
+        .text {
+            flex: 1;
+        }
+
+        .secondary-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.7rem;
+        }
+
+        .hero-paragraph {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            line-height: 2rem;
+            color: $veryDarkBlue;
+        }
+
+        .btn-see {
+            border: none;
+            background-color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+
+            img {
+                margin-left: 1dvh;
+            }
+        }
+
+        .btn-see.active {
+            border-bottom: 1px solid $moderateCyan;
+        }
+
+        .image {
+            flex: 1;
+
+            .illustration-2 {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+#third-container {
+    background-color: $desaturatedBlue;
+    width: 100%;
+    padding: 4dvh;
+    display: flex;
+
+    .third-container-text {
+        flex: 1;
+        margin-top: 5dvh;
+
+        .third-container-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+            color: $lightGrayishBlue;
+            margin-bottom: 3dvh;
+        }
+
+        .third-container-paragraph {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            color: $lightGrayishBlue;
+            margin-bottom: 5dvh;
+        }
+    }
+
+    .second-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5dvh;
+        flex: 1;
+
+        #email {
+            width: 80dvh;
+            height: 7dvh;
+            margin-bottom: 3dvh;
+        }
+
+        .btn {
+            background-color: $brightBlue;
+            border: none;
+            width: 30dvh;
+            height: 7dvh;
+            color: $lightGrayishBlue;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}

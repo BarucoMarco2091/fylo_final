@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main #container {
+  display: flex;
+  margin-right: 9dvh;
+  margin-left: 9dvh;
+  margin-bottom: 20dvh;
+}
+main #container #container-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+main #container #container-text .main-title {
+  font-family: "Raleway", sans-serif, serif;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 3dvh;
+  line-height: 3rem;
+}
+main #container #container-text .container-text-paragraph {
+  font-family: "Raleway", sans-serif, serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: hsl(243, 87%, 12%);
+  margin-bottom: 3dvh;
+}
+main #container #container-text .form {
+  display: flex;
+  gap: 3dvh;
+}
+main #container #container-text .form #email {
+  width: 47dvh;
+}
+main #container #container-text .form .btn {
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  cursor: pointer;
+  width: 20dvh;
+  height: 5dvh;
+  border: none;
+}
+main #container #container-img {
+  flex: 1;
+}
+main #container #container-img .people-img {
+  max-width: 100%;
+  height: auto;
+}
+main #hero {
+  display: flex;
+  height: 100dvh;
+  margin-left: 9dvh;
+  margin-right: 9dvh;
+}
+main #hero .text {
+  flex: 1;
+}
+main #hero .secondary-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+main #hero .hero-paragraph {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: hsl(243, 87%, 12%);
+}
+main #hero .btn-see {
+  border: none;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+main #hero .btn-see img {
+  margin-left: 1dvh;
+}
+main #hero .btn-see.active {
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+main #hero .image {
+  flex: 1;
+}
+main #hero .image .illustration-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+#third-container {
+  background-color: hsl(238, 22%, 44%);
+  width: 100%;
+  padding: 4dvh;
+  display: flex;
+}
+#third-container .third-container-text {
+  flex: 1;
+  margin-top: 5dvh;
+}
+#third-container .third-container-text .third-container-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: hsl(240, 75%, 98%);
+  margin-bottom: 3dvh;
+}
+#third-container .third-container-text .third-container-paragraph {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: hsl(240, 75%, 98%);
+  margin-bottom: 5dvh;
+}
+#third-container .second-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5dvh;
+  flex: 1;
+}
+#third-container .second-form #email {
+  width: 80dvh;
+  height: 7dvh;
+  margin-bottom: 3dvh;
+}
+#third-container .second-form .btn {
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  width: 30dvh;
+  height: 7dvh;
+  color: hsl(240, 75%, 98%);
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=main.component.css.map */
