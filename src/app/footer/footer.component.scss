@@ -14,6 +14,7 @@ footer {
         max-width: 100%;
         height: auto;
         margin-top: 5dvh;
+        filter: invert(100%);
     }
 
     .footer-container {
@@ -33,5 +34,16 @@ footer {
                 margin-right: 3dvh;
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 2dvh 2dvh !important;
     }
 }

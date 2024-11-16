@@ -14,6 +14,10 @@ header .navbar {
   justify-content: space-around;
   gap: 5dvh;
 }
+header .navbar .logo {
+  max-width: 100%;
+  height: auto;
+}
 header .navbar .navlist {
   display: flex;
   list-style-type: none;
@@ -24,4 +28,18 @@ header .navbar .navlink {
   font-size: 1rem;
   color: hsl(243, 87%, 12%);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    margin-bottom: 2dvh !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 30% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=header.component.css.map */

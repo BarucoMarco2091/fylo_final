@@ -3,7 +3,7 @@ $desaturatedBlue: hsl(238, 22%, 44%);
 $brightBlue: hsl(224, 93%, 58%);
 $moderateCyan: hsl(170, 45%, 43%);
 $lightGrayishBlue: hsl(240, 75%, 98%);
-$lightGray: hsl(0, 0%,75%);
+$lightGray: hsl(0, 0%, 75%);
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -18,7 +18,7 @@ $lightGray: hsl(0, 0%,75%);
 }
 
 header {
-    
+
     .navbar {
         display: flex;
         flex-direction: row;
@@ -26,6 +26,11 @@ header {
         margin-bottom: 7dvh;
         justify-content: space-around;
         gap: 5dvh;
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
 
         .navlist {
             display: flex;
@@ -39,5 +44,19 @@ header {
             color: $veryDarkBlue;
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        margin-bottom: 2dvh !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 30% !important;
+        object-fit: cover;
     }
 }

@@ -6,6 +6,7 @@ footer .footer-img {
   max-width: 100%;
   height: auto;
   margin-top: 5dvh;
+  filter: invert(100%);
 }
 footer .footer-container {
   cursor: pointer;
@@ -20,4 +21,15 @@ footer .footer-container .footer-contact .icon-phone {
 }
 footer .footer-container .footer-contact .icon-email {
   margin-right: 3dvh;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 2dvh 2dvh !important;
+  }
 }/*# sourceMappingURL=footer.component.css.map */
