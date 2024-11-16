@@ -1,0 +1,43 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%,75%);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// Header - stylesheet
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3dvh;
+        margin-bottom: 7dvh;
+        justify-content: space-around;
+        gap: 5dvh;
+
+        .navlist {
+            display: flex;
+            list-style-type: none;
+            gap: 2dvh;
+        }
+
+        .navlink {
+            font-family: 'Raleway', sans-serif, serif;
+            font-size: 1rem;
+            color: $veryDarkBlue;
+            cursor: pointer;
+        }
+    }
+}
